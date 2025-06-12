@@ -5,7 +5,7 @@ const FinanceDetail = () => {
     <div>
       <div className="container mt-5 lg:mt-20 px-2 lg:px-0">
         <div
-          className="box-border rounded-lg h-auto lg:h-[70vh] 
+          className="box-border rounded-lg h-auto lg:h-[60vh] 
                           flex flex-col lg:flex-row transition-all duration-500 
                           relative overflow-hidden bg-white"
         >
@@ -25,7 +25,7 @@ const FinanceDetail = () => {
                 a unique EPС+F business model
               </p>
               <p className="font-medium text-sm lg:text-lg py-3">FINANCING ALTERNATIVES</p>
-             <ul className="space-y-1">
+             <ul className="space-y-2">
               <li>Bank Loan</li>
               <li>Private Fund Credit</li>
               <li>Equity Participation</li>

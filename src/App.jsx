@@ -15,9 +15,11 @@ import Contact from "./pages/Contact";
 import Clinker from "./pages/Clinker";
 import Coal from "./pages/Coal";
 import Fuels from "./pages/Fuels";
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
-    <div>
+    <div >
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
