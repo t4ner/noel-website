@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import ServicesList from '../components/ServicesList'
 import Footer from '../components/Footer'
+import ServicesInfo from '../components/ServicesInfo'
 
 const Services = () => {
   return (
@@ -11,6 +12,7 @@ const Services = () => {
         <Hero 
         title="Services"
         image="/services/services-1.jpg"/>
+        <ServicesInfo/>
         <ServicesList/>
         <Footer/>
     </div>

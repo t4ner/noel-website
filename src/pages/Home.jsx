@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import MainServices from "../components/MainServices";
 import Footer from "../components/Footer";
-
+import Stories from "../components/Stories"
 const Home = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const Home = () => {
           image="/hero/home-hero.jpg"
         />
         <MainServices />
+        <Stories/>
       </div>
       <Footer />
     </>

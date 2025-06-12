@@ -1,6 +1,7 @@
 import React from "react";
 
 const MainServices = () => {
+
   const Services = [
     {
       title: "Cement",
@@ -116,6 +117,7 @@ const MainServices = () => {
     },
   ];
 
+
   return (
     <div>
       <div className="container mt-5 lg:mt-16 px-2 lg:px-0">
@@ -143,7 +145,7 @@ const MainServices = () => {
                     <h2 className="text-lg lg:text-3xl mb-4 lg:mb-6 text-gray-800 font-bold font-krona">
                       {service.title}
                     </h2>
-                    <p className="text-sm lg:text-lg text-gray-600 leading-relaxed">
+                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed">
                       {service.description}
                     </p>
                   </div>

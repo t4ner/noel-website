@@ -1,3 +1,5 @@
+
+
 const services = [
   {
     number: "01",
@@ -9,52 +11,76 @@ const services = [
   {
     number: "02",
     title: "Construction Services",
-    link:"/services/construction-services",
+    link: "/services/construction-services",
     description: "Read More",
     image: "/services/category-2.jpg",
   },
   {
     number: "03",
     title: "Trading Services",
-    link:"/services/trading-services",
+    link: "/services/trading-services",
     description: "Read More",
     image: "/services/category-3.jpg",
   },
   {
     number: "04",
     title: "Finance Solutions",
-    link:"/services/finance-solutions",
+    link: "/services/finance-solutions",
     description: "Read More",
     image: "/services/category-4.jpg",
   },
   {
     number: "05",
     title: "Project Management",
-    link:"/services/project-management",
+    link: "/services/project-management",
     description: "Read More",
     image: "/services/category-5.jpg",
   },
   {
     number: "06",
     title: "Consultancy",
-    link:"/services/consultancy",
+    link: "/services/consultancy",
     description: "Read More",
     image: "/services/category-6.jpg",
   },
   {
     number: "07",
     title: "Engineering",
-    link:"/services/engineering",
+    link: "/services/engineering",
     description: "Read More",
     image: "/services/category-7.jpg",
   },
   {
     number: "08",
     title: "Licensing",
-    link:"/services/licensing",
+    link: "/services/licensing",
     description: "Read More",
     image: "/services/category-8.jpg",
   },
 ];
 
-export { services };
+const cards = [
+  {
+    number: "01",
+    content:
+      " The Cement Mill project was put into operation as EPC in 2023 - Algeria Annaba",
+    link: "/services/trading-services",
+    image: "/stories/stories1.webp",
+  },
+  {
+    number: "02",
+
+    content:
+      "Medcem Port Projects has been established in Silifke/Taşucu Yeşilovacık. The handling capacity of our port is 8,000,000 Mton/Year. After the completion of our port expansion project, our capacity will reach 10,000,000 Mton/Year",
+    image: "/stories/stories2.jpg",
+  },
+  {
+    number: "03",
+
+    content:
+      "Production has commenced on the QCC4 5500TPD Clinker Production Line Project",
+    image: "/stories/stories3.jpg",
+  },
+];
+
+export { services, cards };
