@@ -1,5 +1,3 @@
-
-
 const services = [
   {
     number: "01",
@@ -83,4 +81,28 @@ const cards = [
   },
 ];
 
-export { services, cards };
+const tradingservices = [
+  {
+    number: "01",
+    title: "Clinker & Cement Trading",
+    link: "/services/trading-services/clinker-cement-trading",
+    description: "Read More",
+    image: "/services/category-1.jpg",
+  },
+  {
+    number: "02",
+    title: "Coal Trading",
+    link: "/services/trading-services/coal-trading",
+    description: "Read More",
+    image: "/services/category-2.jpg",
+  },
+  {
+    number: "03",
+    title: "Alternative Fuels Trading",
+    link: "/services/trading-services/alternative-fuels-trading",
+    description: "Read More",
+    image: "/services/category-3.jpg",
+  },
+];
+
+export { services, cards, tradingservices };

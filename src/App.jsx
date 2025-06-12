@@ -12,6 +12,9 @@ import Engineering from "./pages/Engineering";
 import Licensing from "./pages/Licensing";
 import Whoweare from "./pages/Whoweare";
 import Contact from "./pages/Contact";
+import Clinker from "./pages/Clinker";
+import Coal from "./pages/Coal";
+import Fuels from "./pages/Fuels";
 const App = () => {
   return (
     <div>
@@ -34,6 +37,18 @@ const App = () => {
         <Route path="/services/licensing" element={<Licensing />} />
         <Route path="/who-we-are" element={<Whoweare />} />
         <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/services/trading-services/clinker-cement-trading"
+          element={<Clinker />}
+        />
+        <Route
+          path="/services/trading-services/coal-trading"
+          element={<Coal />}
+        />
+        <Route
+          path="/services/trading-services/alternative-fuels-trading"
+          element={<Fuels />}
+        />
       </Routes>
     </div>
   );
