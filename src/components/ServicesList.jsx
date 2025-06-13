@@ -49,7 +49,7 @@ const ServicesList = () => {
         </div>
 
         {/* Desktop Görünüm */}
-        <div className="hidden md:grid grid-cols-4 gap-4 h-[600px]">
+        <div className="hidden md:grid grid-cols-3 gap-4 h-[1200px]">
           {services.map((service, index) => (
             <Link
               key={index}
