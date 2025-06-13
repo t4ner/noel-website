@@ -44,7 +44,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/who-we-are"
                   className="text-gray-500 hover:text-[#0C4A79] transition-colors duration-200 "
                 >
                   WHO WE ARE
