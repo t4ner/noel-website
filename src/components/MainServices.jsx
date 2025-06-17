@@ -1,159 +1,78 @@
 import React from "react";
-
+import { MdDescription } from "react-icons/md";
+import { serviceCategories } from "../data";
 const MainServices = () => {
-
-  const Services = [
-    {
-      title: "Cement",
-      image: "/main-services/main-services1.jpg",
-      description: (
-        <>
-          We provide support in all areas from turnkey factory installation to
-          spare parts supply in the cement Industry
-          <ul className="mt-2">
-            <li>Consulting Services</li>
-            <li>Project Management Services</li>
-            <li>Equipment Supply</li>
-            <li>Engineering Services</li>
-            <li>Commissioning and Startup Operations</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      title: "Port",
-      image: "/main-services/main-services2.jpeg",
-      description: (
-        <>
-          We provide customized solutions for all your equipment needs at your
-          ports. In container terminals and bulk cargo terminals, we offer
-          tailored solutions and support you in equipment supply, installation,
-          and commissioning processes
-          <ul className="mt-2">
-            <li>Cranes</li>
-            <li>STS (Ship-to-Shore) Cranes</li>
-            <li>
-              RMG (Rail-Mounted Gantry) / RTG (Rubber-Tired Gantry) Cranes
-            </li>
-            <li>Modification</li>
-            <li>Ship Unloading / Loading</li>
-            <li>Pipe Conveyors</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      title: "Energy",
-      image: "/main-services/main-services3.jpg",
-      description: (
-        <>
-          WHR PLANTS (WASTE HEAT RECOVERY PLANTS)
-          <br />
-          Our company specializes in the design and sizing of heat boilers (heat
-          exchangers) for waste heat recovery systems. We provide all the
-          necessary features and detailed engineering to achieve full
-          integration of both mechanical and electrical scopes
-          <ul className="mt-2">
-            <li>Equipment Supply</li>
-            <li>Engineering Services</li>
-            <li>Commissioning and Startup Operations</li>
-            <li>Finance</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      title: "Steel",
-      image: "/main-services/main-services4.png",
-      description: (
-        <ul className="mt-2">
-          <li>Power Plant</li>
-          <li>Waste Heat Recovery Plant</li>
-          <li>Complete production line</li>
-          <li>Complete steel mill</li>
-          <li>DRI</li>
-          <li>Rolled</li>
-          <li>Integrated production line</li>
-          <li>Electrode Supply</li>
-        </ul>
-      ),
-    },
-    {
-      title: "Mining and Metallurgy",
-      image: "/main-services/main-services5.webp",
-      description: (
-        <ul className="mt-2">
-          <li>Crushing Solutions for Mining</li>
-          <li>Gypsum Production Line’s</li>
-          <li>Aerated Concrete Block Production Line’s</li>
-          <li>Air Separation Plant</li>
-          <li>Aluminium Profile and Composite Panel Production Facilities</li>
-          <li>PVC and Roller Shutter Production Facilitie</li>
-        </ul>
-      ),
-    },
-    {
-      title: "Trading and Logistics",
-      image: "/main-services/main-services6.jpg",
-      description: (
-        <>
-          Physical Trading, logistics and distribution are our core verticals
-          primarily in the form of raw materials (ie. coal, clinker, gypsum,
-          limestone) international trading of commercial products (ie. cement)
-          diversified operations comprise of mines and production plants.
-          <br />
-          We are also providing sophisticated transportation, warehousing and
-          distribution services all over the world.
-          <br />
-          We are control the movement and storage of goods, services, or
-          information within a supply chain and between the points of origin and
-          consumption.
-          <br />
-          The company prepares tailor-made logistics solutions for each customer
-          and their needs. Innovative logistics and supply-chain services and
-          solutions.
-        </>
-      ),
-    },
-  ];
 
 
   return (
-    <div>
-      <div className="container mt-5 lg:mt-16 px-2 lg:px-0">
-        <ul className="list-none p-0 grid grid-cols-1 gap-[4vw]">
-          {Services.map((service, index) => (
-            <li
-              key={index}
-              className="sticky top-0"
-              style={{ paddingTop: `calc(${index + 1} * 1.5em)` }}
-            >
+    <div className="container mx-auto pt-20">
+      <div className="space-y-12 md:space-y-18">
+        {serviceCategories.map((service, index) => (
+          <div
+            key={service.id}
+            className={`flex flex-col md:flex-row gap-12 md:gap-24 items-center ${
+              index % 2 === 1 ? "md:flex-row-reverse" : ""
+            }`}
+          >
+            {/* Image Section */}
+            <div className="w-full md:w-1/2 h-[300px] md:h-[500px] relative order-1 md:order-none">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#24aae1]/10 to-[#146fad]/10 rounded-3xl transform -rotate-4" />
               <div
-                className="box-border rounded-lg h-auto lg:h-[70vh] 
-                            flex flex-col lg:flex-row transition-all duration-500 
-                            relative overflow-hidden bg-white"
+                className="w-full h-full overflow-hidden rounded-3xl 
+                shadow-[0_2px_10px_-3px_rgba(6,35,75,0.1)] 
+                relative z-10 transform rotate-0"
               >
-                <div className="w-full lg:w-2/3 relative h-[300px] lg:h-full">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Content Section */}
+            <div className="w-full md:w-1/2 order-2 md:order-none">
+              <div
+                className="bg-white/90 backdrop-blur-sm p-6 md:p-16 rounded-3xl 
+                shadow-[0_2px_10px_-3px_rgba(6,35,75,0.1)] 
+                hover:shadow-[0_8px_30px_-10px_rgba(6,35,75,0.2)] 
+                border border-gray-100
+                transition-all duration-500 
+                min-h-[400px] md:h-[600px] 
+                flex flex-col justify-center
+                relative z-10"
+              >
+                <div className="relative mb-6 md:mb-8 flex">
+                  <span className="text-6xl md:text-8xl font-bold text-black/5 absolute -top-8 -left-4 md:-top-10 md:-left-6">
+                    {service.id}
+                  </span>
+                  <h2 className="text-xl md:text-3xl font-bold font-krona">
+                    {service.title}
+                  </h2>
                 </div>
-                <div className="w-full lg:w-1/2 p-6 lg:p-12 flex flex-col justify-center">
-                  <div className="max-w-xl">
-                    <h2 className="text-lg lg:text-3xl mb-4 lg:mb-6 text-gray-800 font-bold font-krona">
-                      {service.title}
-                    </h2>
-                    <p className="text-sm lg:text-base text-gray-600 leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
+                <div>
+                  <ul className="space-y-2 md:space-y-3">
+                    <p className="text-black/70"> {service.description}</p>
+                    {service.details.map((detail, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-center space-x-3 md:space-x-4 text-black/70 group"
+                      >
+                        <span className="text-[#006495]  text-2xl md:text-3xl leading-none">
+                          ›
+                        </span>
+                        <span className="text-sm md:text-base group-hover:text-[#006495]  group-hover:translate-x-2 transition-all duration-300">
+                          {detail}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-            </li>
-          ))}
-        </ul>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ const Hero = ({ title, subtitle, image }) => {
     <section>
       <div className="container mx-auto">
         <div className="relative lg:rounded-lg overflow-hidden">
-          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-black/10"></div>
 
           <img
             src={image}
@@ -16,7 +16,7 @@ const Hero = ({ title, subtitle, image }) => {
           />
 
           <div className="absolute inset-0 flex items-end justify-start p-2 lg:p-4">
-            <h1 className="text-white text-xl  lg:text-5xl font-bold max-w-7xl font-krona lg:leading-16">
+            <h1 className="text-white text-xl  lg:text-5xl font-bold font-krona lg:leading-16">
               {title} <br /> {subtitle}
             </h1>
           </div>

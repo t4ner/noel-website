@@ -82,7 +82,7 @@ const WhowearePartner = () => {
                 className="group p-4 rounded-xl bg-gray-50  transition-all duration-300 h-full"
               >
                 <div className="flex items-start gap-3">
-                  <div className="w-1 h-1 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></div>
+                  <div className="w-1 h-1 rounded-full bg-[#006495] mt-2 flex-shrink-0"></div>
                   <p className="text-gray-700  text-base">{item}</p>
                 </div>
               </div>

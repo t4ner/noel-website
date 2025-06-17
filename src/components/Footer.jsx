@@ -15,7 +15,7 @@ const Footer = () => {
               <img
                 src="/logo/logo.png"
                 alt="Cable Machinery GmbH Logo"
-                className="h-14 lg:h-20 w-auto"
+                className="h-14 lg:h-32 w-auto"
               />
             </Link>
           </div>

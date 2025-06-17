@@ -7,15 +7,14 @@ const Information = () => {
       {/* Background Elements */}
 
       <div className="relative container mx-auto">
-        <h2 className="text-lg  lg:text-3xl mb-18 text-gray-800 font-bold font-krona">
+        <h2 className="text-xl md:text-3xl  mb-18 font-bold font-krona">
           Latest insights and stories
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 relative px-4 sm:px-0">
           {cards.map((card, index) => (
             <div key={index} className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-[#24aae1] to-[#146fad] rounded-[20px] opacity-0 group-hover:opacity-20" />
-
+             
               <div className="relative h-full bg-white/80 backdrop-blur-sm rounded-[18px] p-6 sm:p-8 lg:p-10  border border-gray-100/50">
                 {/* Image */}
                 <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
@@ -26,18 +25,11 @@ const Information = () => {
                   />
                 </div>
 
-                {/* Number */}
-                <div className="absolute -top-6 sm:-top-8 left-6 sm:left-8">
-                  <span className="text-6xl sm:text-8xl font-bold text-gray-300">
-                    {card.number}
-                  </span>
-                </div>
+               
 
                 {/* Content Container */}
                 <div className="relative z-10">
                   <div className="w-16 sm:w-20 h-0.5 mb-6 sm:mb-8 bg-gradient-to-r from-[#24aae1] to-[#146fad] hover:w-[120px] transition-all duration-300" />
-
-                 
 
                   <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                     {card.content}

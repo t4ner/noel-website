@@ -36,7 +36,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="relative bg-gray-50 container mx-auto my-5 p-4 lg:rounded-lg">
+    <header className="relative bg-gray-50 container mx-auto my-5 p lg:rounded-lg">
       <nav className="w-full" role="navigation" aria-label="Main navigation">
         <div className="container px-0 lg:px-4 mx-auto">
           <div className="flex items-center justify-between">
@@ -49,9 +49,8 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="Company Logo"
-                className="object-contain w-auto h-16 lg:h-20"
-                width="80"
-                height="80"
+                className="object-contain w-auto h-18 lg:h-32"
+               
                 loading="eager"
                 fetchPriority="high"
               />

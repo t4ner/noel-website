@@ -105,4 +105,144 @@ const tradingservices = [
   },
 ];
 
-export { services, cards, tradingservices };
+const serviceCategories = [
+  {
+    id: "01",
+    title: "Cement",
+    image: "/main-services/main-services1.jpg",
+    description:
+      "  We provide support in all areas from turnkey factory installation to spare parts supply in the cement Industry",
+    details: [
+      "Consulting Services",
+      "Project Management Services",
+      "Equipment Supply",
+      "Engineering Services",
+      "Commissioning and Startup Operations",
+    ],
+  },
+  {
+    id: "02",
+    title: "Port",
+    image: "/main-services/main-services2.jpeg",
+    description:
+      "  We provide customized solutions for all your equipment needs at your ports. In container terminals and bulk cargo terminals, we offer tailored solutions and support you in equipment supply, installation, and commissioning processes",
+    details: [
+      "Cranes",
+      "STS (Ship-to-Shore) Cranes",
+      " RMG (Rail-Mounted Gantry) / RTG (Rubber-Tired Gantry) Cranes",
+      "Modification",
+      "Ship Unloading / Loading",
+      "Pipe Conveyors",
+    ],
+  },
+  {
+    id: "03",
+    title: "Energy",
+    image: "/main-services/main-services3.jpg",
+    description: "WHR PLANTS (WASTE HEAT RECOVERY PLANTS)",
+    details: [
+      "Our company specializes in the design and sizing of heat boilers (heat exchangers) for waste heat recovery systems. We provide all the necessary features and detailed engineering to achieve full integration of both mechanical and electrical scopes",
+      "Equipment Supply",
+      "Engineering Services",
+      "Commissioning and Startup Operations",
+      "Finance",
+    ],
+  },
+  {
+    id: "04",
+    title: "Steel",
+    image: "/main-services/main-services4.png",
+    details: [
+      "Power Plant",
+      "Waste Heat Recovery Plant",
+      "Complete production line",
+      "Complete steel mill",
+      "DRI",
+      "Rolled",
+      "Integrated production line",
+      "Electrode Supply",
+    ],
+  },
+  {
+    id: "05",
+    title: "Mining and Metallurgy",
+    image: "/main-services/main-services5.webp",
+    details: [
+      "Crushing Solutions for Mining",
+      "Gypsum Production Line’s",
+      "Aerated Concrete Block Production Line’s",
+      "Air Separation Plant",
+      "Aluminium Profile and Composite Panel Production Facilities",
+      "PVC and Roller Shutter Production Facilitie",
+    ],
+  },
+  {
+    id: "06",
+    title: "Trading and Logistics",
+    image: "/main-services/main-services6.jpg",
+    details: [
+      "  Physical Trading, logistics and distribution are our core verticals  primarily in the form of raw materials (ie. coal, clinker, gypsum, limestone) international trading of commercial products (ie. cement) diversified operations comprise of mines and production plants.",
+      " We are also providing sophisticated transportation, warehousing and distribution services all over the world.",
+      "  We are control the movement and storage of goods, services, or information within a supply chain and between the points of origin and consumption.",
+      " The company prepares tailor-made logistics solutions for each customer and their needs. Innovative logistics and supply-chain services and solutions.",
+    ],
+  },
+];
+
+const equipmentCategories = [
+  {
+    id: "01",
+    image: "/equipment/equipment-list1.jpg",
+    description:
+      "With our European and Far East partners we have realised E/P/C +F many successful projects in Cement, Iron and Steel, Energy, Metallurgy, Mining, Chemical and Fertilizers Industry, and different many markets.",
+    details: [
+      "Manufacture",
+      "Supply",
+      "Installation Supervision",
+      "Commissioning",
+      "Training",
+      "After-sales Service",
+      "Project Management",
+      "EPC Contractor",
+    ],
+  },
+  {
+    id: "02",
+    image: "/equipment/equipment-list2.jpg",
+    details: [
+      "Port Management",
+      "Shipbuilding",
+      "Terminal Operators",
+      "Construction of Port Facilities",
+    ],
+  },
+  {
+    id: "03",
+    image: "/equipment/equipment-list3.jpg",
+    details: [
+      "Transportation of Materials",
+      "Power Communications",
+      "Waterworks",
+      "Environmental Protection",
+    ],
+  },
+  {
+    id: "04",
+    image: "/equipment/equipment-list4.png",
+    details: [
+      "Complete production line",
+      "Complete steel mill",
+      "DRI",
+      "Rolled",
+      "İntegrated production line",
+    ],
+  },
+];
+
+export {
+  services,
+  cards,
+  tradingservices,
+  serviceCategories,
+  equipmentCategories,
+};

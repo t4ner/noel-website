@@ -43,7 +43,7 @@ const ContactForm = () => {
 
               <a
                 href="mailto:manufacturing@mssmachinery.de"
-                className="text-[#0C4A79] hover:text-[#0C4A79]/80"
+                className="text-[#006495] hover:text-[#006495]/80"
               >
                 manufacturing@mssmachinery.de
               </a>
@@ -56,7 +56,7 @@ const ContactForm = () => {
               </div>
               <a
                 href="tel:+4962186277411"
-                className="text-[#0C4A79] hover:text-[#0C4A79]/80"
+                className="text-[#006495] hover:text-[#006495]/80"
               >
                 +49 621 86277411
               </a>
@@ -117,7 +117,7 @@ const ContactForm = () => {
 
             <button
               type="submit"
-              className="bg-gradient-to-br text-sm  from-[#0C4A79] to-[#2171B5] text-white px-6 py-3 rounded-lg hover:bg-[#0C4A79]/80 transition-colors duration-300"
+              className="bg-[#006495] text-sm   text-white px-6 py-3 rounded-lg hover:bg-[#0C4A79]/80 transition-colors duration-300"
             >
               SUBMİT
             </button>
